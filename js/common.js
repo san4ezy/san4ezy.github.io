@@ -55,11 +55,11 @@ $(document).ready(function(){
 	$(headList).on('click', 'a', function(e){
 		e.preventDefault();
 		var itemId = $(this).attr('href'),
-				blockTop = $(itemId).offset().top;
+			blockTop = $(itemId).offset().top;
 		$('html, body').animate({scrollTop : blockTop - $(head).height()},900);
 
 		$(head).removeClass('header-open');
-		$('.header-nav').slideToggle(100);
+		// $('.header-nav').slideToggle(100);
 
 	});
 
