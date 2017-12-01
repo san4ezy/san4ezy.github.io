@@ -65,10 +65,14 @@ $(document).ready(function(){
 
 	// scroll menu
 	$(window).scroll(function(){
-		if($(this).scrollTop() > 20)
-			$('.header').addClass('fixed');
-		else
-			$('.header').removeClass('fixed');
+		if($(this).scrollTop() > 20) {
+		    $('#logo').attr('width', 32);
+            $('.header').addClass('fixed');
+        }
+		else {
+            $('.header').removeClass('fixed');
+            $('#logo').attr('width', 64);
+        }
 	});
 
 	// mob menu
