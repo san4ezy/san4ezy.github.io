@@ -11,17 +11,19 @@ from django.urls import reverse
 
 @admin.register(Technology)
 class TechnologyAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'show_at_promo', 'is_active',)
 
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'slug', 'description', 'is_active',)
 
 
 @admin.register(Chunk)
 class ChunkAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'description', 'special_value', 'type', 'ordering_value',)
+    list_filter = ('type',)
+    list_editable = ('ordering_value',)
 
 
 @admin.register(Page)

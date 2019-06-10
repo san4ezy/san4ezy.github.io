@@ -5,36 +5,28 @@
     <div class="wrapper">
         <h2 class="section-title command-title">Команда</h2>
         <div class="portfolio-slider">
-            <div class="portfolio-slide">
-                <div class="command-column__img">
-                    <img src="{% static "img/yudkin.jpg" %}" alt="san4ezy">
+
+            {% for player in team_players %}
+                <div class="portfolio-slide">
+                    <div class="command-column__img">
+                        <img src="{{ player.image.url }}" alt="SunnyWeb {{ player.description }}">
+                    </div>
+                    <h3 class="command-column__title">{{ player.name }}</h3>
+                    <p class="command-column__text">{{ player.description }}</p>
                 </div>
-                <h3 class="command-column__title">Юдкин А.</h3>
-                <p class="command-column__text">Team lead, Python Developer</p>
-            </div><!-- slide(1) -->
-            <div class="portfolio-slide">
-                <div class="command-column__img">
-                    <img src="{% static "img/person-2.jpg" %}" alt="san4ezy">
+            {% endfor %}
+
+            {% for vacancy in vacancies %}
+                <div class="portfolio-slide">
+                    <div class="command-column__img">
+                        <a href="#{{ vacancy.special_value }}" class="button-modal">
+                            <img src="{% static "img/plus.png" %}" alt="SunnyWeb {{ vacancy.name }}">
+                        </a>
+                    </div>
+                    <h3 class="command-column__title">Вакансия</h3>
+                    <p class="command-column__text">{{ vacancy.name }}</p>
                 </div>
-                <h3 class="command-column__title">Иванов С.А</h3>
-                <p class="command-column__text">Руководитель отдела</p>
-            </div><!-- slide(2) -->
-            <!--div class="portfolio-slide">
-                <div class="command-column__img">
-                    <img src="img/plus.png" alt="работа">
-                </div>
-                <h3 class="command-column__title">Вакансия</h3>
-                <p class="command-column__text">Project manager</p>
-            </div--><!-- slide(3) -->
-            <div class="portfolio-slide">
-                <div class="command-column__img">
-                    <a href="#job-sales-manager" class="button-modal">
-                        <img src="{% static "img/plus.png" %}" alt="работа">
-                    </a>
-                </div>
-                <h3 class="command-column__title">Вакансия</h3>
-                <p class="command-column__text">Sales manager</p>
-            </div><!-- slide(4) -->
+            {% endfor %}
         </div>
     </div>
 </section>

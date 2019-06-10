@@ -7,10 +7,13 @@
             <div class="contacts-column__descr">
                 <h2 class="section-title contacts-title">Контакты</h2>
                 <ul class="contacts-list">
-                    <!-- <li class="contacts-item">Phone number: <a href="tel:+380987654321">+380 98 796 3224</a></li> -->
-                    <li class="contacts-item">Email: <a href="mailTo:inbox@sunnyweb.pro">inbox@sunnyweb.pro</a></li>
-                    <!--li class="contacts-item">Skype: <a href="#login">sunnyweb</a></li-->
-                    <li class="contacts-item">Telegram: <a href="https://t.me/sunnyweb">@sunnyweb</a></li>
+                    {% for contact in contacts %}
+                        <li class="contacts-item">{{ contact.name }}: {{ contact.special_value }}</li>
+                    {% endfor %}
+{#                    <!-- <li class="contacts-item">Phone number: <a href="tel:+380987654321">+380 98 796 3224</a></li> -->#}
+{#                    <li class="contacts-item">Email: <a href="mailTo:inbox@sunnyweb.pro">inbox@sunnyweb.pro</a></li>#}
+{#                    <!--li class="contacts-item">Skype: <a href="#login">sunnyweb</a></li-->#}
+{#                    <li class="contacts-item">Telegram: <a href="https://t.me/sunnyweb">@sunnyweb</a></li>#}
                 </ul>
             </div>
         </div>
@@ -24,34 +27,20 @@
         <div class="footer-row">
             <div class="footer-column">
                 <ul class="footer-column__list">
-                    <li class="footer-column__item">
-                        <a href="https://vk.com/sunnyweb">
-                            <picture>
-                                <source srcset="{% static "img/vk.svg" %}" type="image/svg+xml">
-                                <img src="{% static "img/vk.png" %}" alt="san4ezy">
-                            </picture>
-                        </a>
-                    </li>
-                    <li class="footer-column__item">
-                        <a href="https://www.facebook.com/sunnywebsoftware/">
-                            <picture>
-                                <source srcset="{% static "img/facebook.svg" %}" type="image/svg+xml">
-                                <img src="{% static "img/facebook.png" %}" alt="san4ezy">
-                            </picture>
-                        </a>
-                    </li>
-                    <li class="footer-column__item">
-                        <a href="https://www.linkedin.com/company/sunnyweb-software/">
-                            <picture>
-                                <source srcset="{% static "img/linkedin.svg" %}" type="image/svg+xml">
-                                <img src="{% static "img/linkedin.png" %}" alt="san4ezy">
-                            </picture>
-                        </a>
-                    </li>
+                    {% for social_contact in social_contacts %}
+                        <li class="footer-column__item">
+                            <a href="{{ social_contact.special_value }}" target="_blank">
+                                <picture>
+                                    <source srcset="{{ social_contact.image.url }}" type="image/svg+xml">
+                                    <img src="{{ social_contact.image.url }}" alt="SunnyWeb {{ social_contact.name }}">
+                                </picture>
+                            </a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="footer-column">
-                <p class="footer-column__copy">SunnyWeb &copy; 2016-2018</p>
+                <p class="footer-column__copy">SunnyWeb &copy; 2016-{{ year }}</p>
             </div>
         </div>
     </div>

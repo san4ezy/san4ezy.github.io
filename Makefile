@@ -1,11 +1,11 @@
 static:
-	python manage.py collectstatic
+	python builder/manage.py collectstatic
 
 migrations:
-	python manage.py makemigrations
+	python builder/manage.py makemigrations
 
 migrate:
-	python manage.py migrate
+	python builder/manage.py migrate
 
 webserver:
 	python -m http.server 9000

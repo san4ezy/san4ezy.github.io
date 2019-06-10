@@ -1,4 +1,24 @@
 <!-- start portfolio -->
+{% for project in projects %}
+    <div class="modal" id="portfolio-{{ project.slug }}">
+        <div class="modal-content">
+            <div class="cancel"></div>
+            <div class="modal-content__descr">
+                <h3 class="modal-content__title">{{ project.name }}</h3>
+                <p class="modal-content__text">{{ project.description }}</p>
+                <p class="modal-content__text"><strong>Стек технологий:</strong>
+                    {% for technology in project.technologies.all %}
+                        {{ technology.name }} &nbsp;
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="modal-content__img">
+                <img src="{{ project.image.url }}" alt="{{ project.slug }}">
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
 <section class="portfolio" id="portfolio">
     <div class="wrapper">
         <h2 class="section-title portfolio-title">Портфолио</h2>
