@@ -1,0 +1,21 @@
+<!-- start services -->
+	<section class="services" id="services">
+		<div class="wrapper">
+			<h2 class="section-title services-title">Услуги</h2>
+			<div class="services-row">
+				{% for service in services %}
+                    <div class="services-column">
+                        <div class="services-column__img">
+                            <img src="{{ service.image.url }}">
+                            <!-- <picture>
+                                <source srcset="img/startup.svg" type="image/svg+xml">
+                                <img src="img/startup.png" alt="san4ezy">
+                            </picture> -->
+                        </div>
+                        <p class="services-column__text">{{ service.name }}</p>
+                    </div>
+                 {% endfor %}
+			</div>
+		</div>
+	</section>
+	<!-- end services -->

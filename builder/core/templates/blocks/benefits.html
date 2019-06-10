@@ -1,0 +1,25 @@
+{% load static %}
+
+<!-- start advantages -->
+<section class="advantages" id="advantages" style="background: url({% static "img/benefits.jpg" %});">
+    <div class="wrapper">
+        <h2 class="advantages-title">Выгоды</h2>
+        <div class="advantages-row">
+
+            {% for benefit in benefits %}
+                <div class="advantages-column">
+                    <div class="advantages-column__img">
+                        <img src="{{ benefit.image.url }}">
+                        <!--picture>
+                            <source srcset="img/startup-white.svg" type="image/svg+xml">
+                            <img src="img/startup-white.png" alt="san4ezy">
+                        </picture-->
+                    </div>
+                    <p class="advantages-column__text">{{ benefit.name }} <br> {{ benefit.description }}</p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- end advantages -->

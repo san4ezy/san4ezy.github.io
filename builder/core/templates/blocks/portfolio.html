@@ -1,0 +1,20 @@
+<!-- start portfolio -->
+<section class="portfolio" id="portfolio">
+    <div class="wrapper">
+        <h2 class="section-title portfolio-title">Портфолио</h2>
+        <div class="portfolio-slider">
+
+            {% for project in projects %}
+                <div class="portfolio-slide">
+                    <a href="#portfolio-{{ project.slug }}" class="button-modal portfolio-link"></a>
+                    <div class="portfolio-slide__img">
+                        <img src="{{ project.image.url }}" alt="{{ project.slug }}">
+                    </div>
+                    <p class="portfolio-slide__text">{{ project.name }}</p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- end portfolio -->

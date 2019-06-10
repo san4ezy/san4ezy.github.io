@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,10 +9,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="img/logo.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href=/static/img/favicon/favicon.ico type="image/x-icon">
+	<link rel="apple-touch-icon" href=/static/img/favicon/apple-touch-icon.png>
+	<link rel="apple-touch-icon" sizes="72x72" href=/static/img/favicon/apple-touch-icon-72x72.png>
+	<link rel="apple-touch-icon" sizes="114x114" href=/static/img/favicon/apple-touch-icon-114x114.png>
 
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -20,275 +22,113 @@
 
 </head>
 <body>
-	<!-- modal -->
-	<div class="modal-overlay"></div>
-	
-	<div class="modal" id="portfolio-kvartirkov">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Kvartirkov</h3>
-				<p class="modal-content__text">Сервис подбора объявлений посуточной аренды жилья в Украине. Разрабатывался основной функционал, кабинет риелтора, поиск и фильтрация объявлений, биллинг.  </p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.5, Django 1.10, PostgreSQL, MySQL, Redis, ElasticSearch, Jade, Jinja, CoffeeScript, Docker, Gulp. </p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/kvartirkov.jpg" alt="kvartirkov">
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal" id="portfolio-ubit">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Ubit</h3>
-				<p class="modal-content__text">Обменник криптовалюты. Разрабатывалось вебприложение и сервис API.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.6, Django 1.11, DjangoRestFramework, DjangoChannels, VueJS, PostgreSQL, Redis, Celery, Privat24 API, Gulp</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/ubit.jpg" alt="ubit">
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal" id="portfolio-yael">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Yael Consalting</h3>
-				<p class="modal-content__text">Консалтинговая компания, специализирующаяся на рынке рекламы в Интернет.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.5, Django 1.11, DjangoRestFramework, VueJS, PostgreSQL, Redis, Celery, Google Analytics, Google Drive, Facebook Ads, Bing Ads</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/yael.jpg" alt="yael">
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal" id="portfolio-indigo">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Indigo Mental</h3>
-				<p class="modal-content__text">Образовательный центр ментальной арифметики со школами по всей Украине.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.6, Django 1.11, DjangoRestFramework, VueJS, Golang, PostgreSQL, Redis, Celery, Fondy API</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/indigo.jpg" alt="indigo">
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal" id="portfolio-icm">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Internet Copyright Mnagement</h3>
-				<p class="modal-content__text">Комплекс корпоративных программ для управления персоналом, агрегации данных из веб, email рассылок</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 2.7, Django 1.6, PostgreSQL, Redis, Celery, Grab</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/icm.jpg" alt="icm">
-			</div>
-		</div>
-	</div>
-	
-	<div class="modal" id="portfolio-kru">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Kru for iPhone</h3>
-				<p class="modal-content__text">Социальная сеть с поиском друзей по геолокациям</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Objective-C, Django 2.7, DjangoRestFramewort, PostgreSQL, PostGis, Redis</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/kru.jpg" alt="kru">
-			</div>
-		</div>
-	</div>
-	
-	<!--div class="modal" id="portfolio-kibzy">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Kibzy</h3>
-				<p class="modal-content__text">Приложение для iPhone - сервис, который позволяет находить надежных драйверов, чтобы подвозить детей. Работает на территории США</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Objective-C, Django 2.7, DjangoRestFramewort, Tornado, PostgreSQL, PostGis, Redis</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/kibzy.jpg" alt="kibzy">
-			</div>
-		</div>
-	</div-->
 
-	<div class="modal" id="portfolio-todo">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">TicketToDo</h3>
-				<p class="modal-content__text">Web-приложение для организации своих заметок. Позволяет создавать карточки, добавлять в них чек-листы, перемещать по папкам, делиться с другими пользователями, настраивать нотификации.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python3.6, DjangoRestFramework, AngularJS, PostgreSQL, Redis, Celery, Bootstrap, Sass</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/todo.jpg" alt="TicketToDo">
-			</div>
-		</div>
-	</div>
+    
+        <div class="modal-overlay"></div>
+        
+            <div class="modal" id="portfolio-burger-city">
+    <div class="modal-content">
+        <div class="cancel"></div>
+        <div class="modal-content__descr">
+            <h3 class="modal-content__title">Burger City</h3>
+            <p class="modal-content__text">Мобильное приложение для сети бургерных. Конструктор бургеров. Онлайн заказ с адресной доставкой.</p>
+            <p class="modal-content__text"><strong>Стек технологий:</strong>
+                
+                    Python &nbsp;
+                
+                    Django &nbsp;
+                
+                    iOS &nbsp;
+                
+                    Android &nbsp;
+                
+            </p>
+        </div>
+        <div class="modal-content__img">
+            <img src="/media/portfolio/app-burger.png" alt="burger-city">
+        </div>
+    </div>
+</div>
+        
+            <div class="modal" id="portfolio-pizzer">
+    <div class="modal-content">
+        <div class="cancel"></div>
+        <div class="modal-content__descr">
+            <h3 class="modal-content__title">Pizzer</h3>
+            <p class="modal-content__text">Приложение пицерии. Возможность выбрать и забронировать столик, сделать заказ и оплатить через мобильное приложение.</p>
+            <p class="modal-content__text"><strong>Стек технологий:</strong>
+                
+                    Python &nbsp;
+                
+                    Django &nbsp;
+                
+                    Django Rest Framework &nbsp;
+                
+                    Postgresql &nbsp;
+                
+                    Redis &nbsp;
+                
+                    iOS &nbsp;
+                
+                    Android &nbsp;
+                
+                    Celery &nbsp;
+                
+            </p>
+        </div>
+        <div class="modal-content__img">
+            <img src="/media/portfolio/app-pizza.jpg" alt="pizzer">
+        </div>
+    </div>
+</div>
+        
+            <div class="modal" id="portfolio-sorter-shop">
+    <div class="modal-content">
+        <div class="cancel"></div>
+        <div class="modal-content__descr">
+            <h3 class="modal-content__title">Sorter Shop</h3>
+            <p class="modal-content__text">Web-приложение для организации своих заметок. Позволяет создавать карточки, добавлять в них чек-листы, перемещать по папкам, делиться с другими пользователями, настраивать нотификации.</p>
+            <p class="modal-content__text"><strong>Стек технологий:</strong>
+                
+                    Python &nbsp;
+                
+                    Django &nbsp;
+                
+                    Django Rest Framework &nbsp;
+                
+                    Redis &nbsp;
+                
+                    MySQL &nbsp;
+                
+                    AgularJS &nbsp;
+                
+                    HTML &nbsp;
+                
+                    CSS &nbsp;
+                
+                    SASS &nbsp;
+                
+                    Bootstrap &nbsp;
+                
+                    Celery &nbsp;
+                
+            </p>
+        </div>
+        <div class="modal-content__img">
+            <img src="/media/portfolio/sorter.jpg" alt="sorter-shop">
+        </div>
+    </div>
+</div>
+        
+    
 
-	<div class="modal" id="portfolio-sorter">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Sorter</h3>
-				<p class="modal-content__text">Web-приложение для организации своих заметок. Позволяет создавать карточки, добавлять в них чек-листы, перемещать по папкам, делиться с другими пользователями, настраивать нотификации.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python3.6, DjangoRestFramework, AngularJS, PostgreSQL, Redis, Celery, Bootstrap, Sass</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/sorter.jpg" alt="sorter">
-			</div>
-		</div>
-	</div>
+    
+    
 
-	<div class="modal" id="portfolio-burger">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">BurgerCity</h3>
-				<p class="modal-content__text">Мобильное приложение для сети бургерных. Конструктор бургеров. Онлайн заказ с адресной доставкой.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.6, Django, Objective-C, DjangoRestFramework, PostgreSQL, PostGis, Redis, Celery</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/app-burger.png" alt="burger city">
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="portfolio-pizza">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Pizzeria</h3>
-				<p class="modal-content__text">Приложение пицерии. Возможность выбрать и забронировать столик, сделать заказ и оплатить через мобильное приложение.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.6, Django, Objective-C, DjangoRestFramework, PostgreSQL, Redis, Celery</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/app-pizza.jpg" alt="pizza">
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="portfolio-taxi">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">City Taxi App</h3>
-				<p class="modal-content__text">Приложение для сервиса такси. Клиентская часть позволяет вызывать такси по адресу, выбирать уровень автомобиля, оплачивать поездку онлайн.
-				Водительская часть позволяет брать заказы, видеть их на карте, выводить заработанные деньги на карту.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.6, Django, DjangoRestFramework, Objective-C, PostgreSQL, PostGis, Memcached, Celery</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/app-taxi.jpg" alt="taxi">
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="portfolio-wear">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Онлайн магазин одежды</h3>
-				<p class="modal-content__text">Приложение для магазина одежды. Покупка товаров онлайн, история заказов, уведомление об ассортименте.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 2.7, Django, DjangoRestFramework, Objective-C, MySQL, Redis, Celery</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/app-wear.png" alt="wear">
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="portfolio-sportpit">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Магазин спортивного питания</h3>
-				<p class="modal-content__text">Магазин спортивного питания. В админке реализована подробная статистика продаж, учет ассортимента, поставки, клиентская база, механизм рассылок.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.5, Django, MySQL, Redis, Celery, Bootstrap, Sass</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/sportpit.jpg" alt="sportpit">
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="portfolio-fashion">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Магазин фирменной одежды</h3>
-				<p class="modal-content__text">Система предзаказов новинок, учет продаж и ассортимента.</p>
-				<p class="modal-content__text"><strong>Стек технологий:</strong> Python 3.5, Django, MySQL, Redis, Celery, Bootstrap, Sass</p>
-			</div>
-			<div class="modal-content__img">
-				<img src="img/portfolio/web-fashion.jpg" alt="fashion">
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="modal" id="job-sales-manager">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<h3 class="modal-content__title">Вакансия Sales-менеджера</h3>
-				<p class="modal-content__text"><strong>Требования:</strong></p>
-				<p class="modal-content__text">
-					<ol>
-						<li>Понимание сферы деятельности IT компании</li>
-						<li>Приветствуется опыт работы менеджером в IT</li>
-						<li>Будет плюсом хороший уровень разговорного английского</li>
-						<li>Коммуникабельность</li>
-					</ol>
-				</p>
-				<p class="modal-content__text"><strong>Условия работы:</strong></p>
-				<p class="modal-content__text">
-					<ol>
-						<li>Работа удаленная</li>
-						<li>Гибкий график</li>
-						<li>Своевременная оплата</li>
-					</ol>
-				</p>
-				<p class="modal-content__text"><strong>Обязанности:</strong></p>
-				<p class="modal-content__text">
-					<ol>
-						<li>Поиск клиентов</li>
-						<li>Ведение переговоров</li>
-						<li>Сопровождение проекта</li>
-					</ol>
-				</p>
-				<p class="modal-content__text">
-					<strong>Хотите работать в нашей дружной команде?
-						Отправляйте резюме на <a href="mailto:inbox@sunnyweb.pro">inbox@sunnyweb.pro</a></strong>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="order">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<div class="modal-content__descr">
-				<p class="modal-content__text">
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSnYfMRb_xviWeOOUQQor-DpiqvCCJDi8vqFNuOgwPYcoIRg/viewform?embedded=true" width="100%" height="390" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- start logo -->
+<!-- start logo -->
 	<div style="position: fixed; top: 10px; left: 10px; z-index: 100">
 		<a href="http://sunnyweb.pro">
-			<img id="logo" src="img/logo_round.png" alt="SunnyWeb" width="64">
+			<img id="logo" src="/static/img/logo_round.png" alt="SunnyWeb" width="64">
 		</a>
 	</div>
 	<!-- end logo -->
@@ -313,12 +153,12 @@
 	<!-- end header -->
 	<!-- start language -->
 	<div style="position: fixed; top: 100px; right: 10px; z-index: 100">
-		<a href="en/"><img src="img/lang/en.png" alt="In English" width="30"></a>
+		<a href="en/"><img src="/static/img/lang/en.png" alt="In English" width="30"></a>
 		<!--<a href="/"><img src="img/lang/ua.png" alt="Українською" width="30"></a>-->
 	</div>
 	<!-- end language -->
 	<!-- start banner -->
-	<section class="banner" style="background: url(img/banner-bg.jpg);">
+	<section class="banner" style="background: url(/static/img/banner-bg.jpg);">
 		<div class="wrapper">
 			<div class="banner-descr">
 				<h1 class="banner-descr__title">SunnyWeb</h1>
@@ -331,359 +171,315 @@
 	<!-- start technologies -->
 	<section class="technologies" id="technologies">
 		<div class="wrapper">
-			<img class="tech-logo" src="img/technologies/python.png" alt="python3">
-			<img class="tech-logo" src="img/technologies/django.png" alt="django">
-			<img class="tech-logo" src="img/technologies/drf.png" alt="django rest framework">
-			<img class="tech-logo" src="img/technologies/django-channels.png" alt="django channels">
-			<img class="tech-logo" src="img/technologies/js.png" alt="javascript">
-			<img class="tech-logo" src="img/technologies/vue.png" alt="vuejs">
-			<img class="tech-logo" src="img/technologies/postgre.png" alt="postgresql">
-			<img class="tech-logo" src="img/technologies/redis.png" alt="redis">
-			<img class="tech-logo" src="img/technologies/mysql.png" alt="mysql">
-			<img class="tech-logo" src="img/technologies/mongo.png" alt="mongodb">
-			<img class="tech-logo" src="img/technologies/react.png" alt="reactjs">
-			<img class="tech-logo" src="img/technologies/angular.png" alt="angularjs">
-			<img class="tech-logo" src="img/technologies/ios.png" alt="ios">
-			<img class="tech-logo" src="img/technologies/android.png" alt="android">
-			<img class="tech-logo" src="img/technologies/html.png" alt="html5">
-			<img class="tech-logo" src="img/technologies/css.png" alt="css3">
-			<img class="tech-logo" src="img/technologies/sass.png" alt="sass">
-			<img class="tech-logo" src="img/technologies/bootstrap.png" alt="bootstrap">
+            
+                <img class="tech-logo" src="/media/technologies/python.png" alt="Python">
+            
+                <img class="tech-logo" src="/media/technologies/django.png" alt="Django">
+            
+                <img class="tech-logo" src="/media/technologies/drf.png" alt="Django Rest Framework">
+            
+                <img class="tech-logo" src="/media/technologies/django-channels.png" alt="Django Channels">
+            
+                <img class="tech-logo" src="/media/technologies/js.png" alt="JavaScript">
+            
+                <img class="tech-logo" src="/media/technologies/vue.png" alt="VueJS">
+            
+                <img class="tech-logo" src="/media/technologies/postgre.png" alt="Postgresql">
+            
+                <img class="tech-logo" src="/media/technologies/redis.png" alt="Redis">
+            
+                <img class="tech-logo" src="/media/technologies/mysql.png" alt="MySQL">
+            
+                <img class="tech-logo" src="/media/technologies/mongo.png" alt="MongoDB">
+            
+                <img class="tech-logo" src="/media/technologies/react.png" alt="React">
+            
+                <img class="tech-logo" src="/media/technologies/angular.png" alt="AgularJS">
+            
+                <img class="tech-logo" src="/media/technologies/ios.png" alt="iOS">
+            
+                <img class="tech-logo" src="/media/technologies/android.png" alt="Android">
+            
+                <img class="tech-logo" src="/media/technologies/html.png" alt="HTML">
+            
+                <img class="tech-logo" src="/media/technologies/css.png" alt="CSS">
+            
+                <img class="tech-logo" src="/media/technologies/sass.png" alt="SASS">
+            
+                <img class="tech-logo" src="/media/technologies/bootstrap.png" alt="Bootstrap">
+            
 		</div>
 	</section>
 	<!-- end technologies -->
-	<!-- start services -->
+
+
+    
+    <!-- start services -->
 	<section class="services" id="services">
 		<div class="wrapper">
 			<h2 class="section-title services-title">Услуги</h2>
 			<div class="services-row">
-				<div class="services-column">
-					<div class="services-column__img">
-						<img src="img/webapp.png">
-						<!-- <picture>
-						 	<source srcset="img/startup.svg" type="image/svg+xml">
-						 	<img src="img/startup.png" alt="san4ezy">
-						</picture> -->
-					</div>
-					<p class="services-column__text">Веб-приложения</p>
-				</div><!-- col(1) -->
-				<div class="services-column">
-					<div class="services-column__img">
-						<img src="img/mobileapp.png">
-						<!-- <picture>
-						 	<source srcset="img/startup.svg" type="image/svg+xml">
-						 	<img src="img/startup.png" alt="san4ezy">
-						</picture> -->
-					</div>
-					<p class="services-column__text">Приложения для Iphone и Android</p>
-				</div><!-- col(2) -->
-				<div class="services-column">
-					<div class="services-column__img">
-						<img src="img/business.png">
-						<!-- <picture>
-						 	<source srcset="img/startup.svg" type="image/svg+xml">
-						 	<img src="img/startup.png" alt="san4ezy">
-						</picture> -->
-					</div>
-					<p class="services-column__text">Финансовые и бизнес-приложения</p>
-				</div><!-- col(3) -->
-				<div class="services-column">
-					<div class="services-column__img">
-						<img src="img/team.png">
-						<!-- <picture>
-						 	<source srcset="img/startup.svg" type="image/svg+xml">
-						 	<img src="img/startup.png" alt="san4ezy">
-						</picture> -->
-					</div>
-					<p class="services-column__text">Удаленный офис айтишников</p>
-				</div><!-- col(4) -->
+				
+                    <div class="services-column">
+                        <div class="services-column__img">
+                            <img src="/media/chunks/webapp1.png">
+                            <!-- <picture>
+                                <source srcset="img/startup.svg" type="image/svg+xml">
+                                <img src="img/startup.png" alt="san4ezy">
+                            </picture> -->
+                        </div>
+                        <p class="services-column__text">Веб приложения</p>
+                    </div>
+                 
+                    <div class="services-column">
+                        <div class="services-column__img">
+                            <img src="/media/chunks/mobileapp.png">
+                            <!-- <picture>
+                                <source srcset="img/startup.svg" type="image/svg+xml">
+                                <img src="img/startup.png" alt="san4ezy">
+                            </picture> -->
+                        </div>
+                        <p class="services-column__text">Приложения для Iphone и Android</p>
+                    </div>
+                 
+                    <div class="services-column">
+                        <div class="services-column__img">
+                            <img src="/media/chunks/business.png">
+                            <!-- <picture>
+                                <source srcset="img/startup.svg" type="image/svg+xml">
+                                <img src="img/startup.png" alt="san4ezy">
+                            </picture> -->
+                        </div>
+                        <p class="services-column__text">Финансовые и бизнес приложения</p>
+                    </div>
+                 
+                    <div class="services-column">
+                        <div class="services-column__img">
+                            <img src="/media/chunks/team.png">
+                            <!-- <picture>
+                                <source srcset="img/startup.svg" type="image/svg+xml">
+                                <img src="img/startup.png" alt="san4ezy">
+                            </picture> -->
+                        </div>
+                        <p class="services-column__text">Удаленный офис айтишников</p>
+                    </div>
+                 
 			</div>
 		</div>
 	</section>
 	<!-- end services -->
-	<!-- start portfolio -->
-	<section class="portfolio" id="portfolio">
-		<div class="wrapper">
-			<h2 class="section-title portfolio-title">Портфолио</h2>
-			<div class="portfolio-slider">
-				
-				<div class="portfolio-slide">
-					<a href="#portfolio-kvartirkov" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/kvartirkov.jpg" alt="kvartirkov">
-					</div>
-					<p class="portfolio-slide__text">Kvartirkov</p>
-				</div>
 
-				<!--div class="portfolio-slide">
-					<a href="#portfolio-yael" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/yael.jpg" alt="yael">
-					</div>
-					<p class="portfolio-slide__text">Yael Consalting</p>
-				</div-->
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-icm" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/icm.jpg" alt="icm">
-					</div>
-					<p class="portfolio-slide__text">Internet Copyright Management</p>
-				</div>
+    
+    <!-- start portfolio -->
+<section class="portfolio" id="portfolio">
+    <div class="wrapper">
+        <h2 class="section-title portfolio-title">Портфолио</h2>
+        <div class="portfolio-slider">
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-kru" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/kru.jpg" alt="kru">
-					</div>
-					<p class="portfolio-slide__text">Kru for iPhone</p>
-				</div>
+            
+                <div class="portfolio-slide">
+                    <a href="#portfolio-burger-city" class="button-modal portfolio-link"></a>
+                    <div class="portfolio-slide__img">
+                        <img src="/media/portfolio/app-burger.png" alt="burger-city">
+                    </div>
+                    <p class="portfolio-slide__text">Burger City</p>
+                </div>
+            
+                <div class="portfolio-slide">
+                    <a href="#portfolio-pizzer" class="button-modal portfolio-link"></a>
+                    <div class="portfolio-slide__img">
+                        <img src="/media/portfolio/app-pizza.jpg" alt="pizzer">
+                    </div>
+                    <p class="portfolio-slide__text">Pizzer</p>
+                </div>
+            
+                <div class="portfolio-slide">
+                    <a href="#portfolio-sorter-shop" class="button-modal portfolio-link"></a>
+                    <div class="portfolio-slide__img">
+                        <img src="/media/portfolio/sorter.jpg" alt="sorter-shop">
+                    </div>
+                    <p class="portfolio-slide__text">Sorter Shop</p>
+                </div>
+            
 
-				<!--div class="portfolio-slide">
-					<a href="#portfolio-kibzy" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/kibzy.jpg" alt="kibzy">
-					</div>
-					<p class="portfolio-slide__text">Kibzy</p>
-				</div-->
+        </div>
+    </div>
+</section>
+<!-- end portfolio -->
 
-				<!--div class="portfolio-slide">
-					<a href="#portfolio-ubit" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/ubit.jpg" alt="ubit">
-					</div>
-					<p class="portfolio-slide__text">Ubit</p>
-				</div-->
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-indigo" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/indigo.jpg" alt="indigo">
-					</div>
-					<p class="portfolio-slide__text">Indigo</p>
-				</div>
+    
+    
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-burger" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/app-burger.jpg" alt="burger city">
-					</div>
-					<p class="portfolio-slide__text">BurgerCity</p>
-				</div>
+<!-- start advantages -->
+<section class="advantages" id="advantages" style="background: url(/static/img/benefits.jpg);">
+    <div class="wrapper">
+        <h2 class="advantages-title">Выгоды</h2>
+        <div class="advantages-row">
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-pizza" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/app-pizza.jpg" alt="pizza">
-					</div>
-					<p class="portfolio-slide__text">Pizzeria</p>
-				</div>
+            
+                <div class="advantages-column">
+                    <div class="advantages-column__img">
+                        <img src="/media/chunks/expirience_2.png">
+                        <!--picture>
+                            <source srcset="img/startup-white.svg" type="image/svg+xml">
+                            <img src="img/startup-white.png" alt="san4ezy">
+                        </picture-->
+                    </div>
+                    <p class="advantages-column__text">Опыт и профессионализм! <br> Мы делаем то, что умеем, и делаем это хорошо. Весь наш опыт и наши знания к вашим услугам.</p>
+                </div>
+            
+                <div class="advantages-column">
+                    <div class="advantages-column__img">
+                        <img src="/media/chunks/money_saving.png">
+                        <!--picture>
+                            <source srcset="img/startup-white.svg" type="image/svg+xml">
+                            <img src="img/startup-white.png" alt="san4ezy">
+                        </picture-->
+                    </div>
+                    <p class="advantages-column__text">Экономия! <br> Удаленная команда специалистов намного выгоднее, чем содержание собственного IT отдела.</p>
+                </div>
+            
+                <div class="advantages-column">
+                    <div class="advantages-column__img">
+                        <img src="/media/chunks/support_3.png">
+                        <!--picture>
+                            <source srcset="img/startup-white.svg" type="image/svg+xml">
+                            <img src="img/startup-white.png" alt="san4ezy">
+                        </picture-->
+                    </div>
+                    <p class="advantages-column__text">Поддержка! <br> Даже после завершения разработки мы продолжаем поддерживать ваш проект.</p>
+                </div>
+            
+                <div class="advantages-column">
+                    <div class="advantages-column__img">
+                        <img src="/media/chunks/testing_2.png">
+                        <!--picture>
+                            <source srcset="img/startup-white.svg" type="image/svg+xml">
+                            <img src="img/startup-white.png" alt="san4ezy">
+                        </picture-->
+                    </div>
+                    <p class="advantages-column__text">Тестирование <br> Проверим работоспособность продукта и исправим все ошибки.</p>
+                </div>
+            
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-sorter" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/sorter.jpg" alt="sorter">
-					</div>
-					<p class="portfolio-slide__text">SorterShop</p>
-				</div>
+        </div>
+    </div>
+</section>
+<!-- end advantages -->
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-todo" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/todo.jpg" alt="todo">
-					</div>
-					<p class="portfolio-slide__text">TodoService</p>
-				</div>
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-taxi" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/app-taxi.jpg" alt="taxi">
-					</div>
-					<p class="portfolio-slide__text">City Taxi</p>
-				</div>
+    
+    
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-wear" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/app-wear.jpg" alt="wear">
-					</div>
-					<p class="portfolio-slide__text">Онлайн магазин одежды</p>
-				</div>
+<!-- start command -->
+<section class="command" id="command">
+    <div class="wrapper">
+        <h2 class="section-title command-title">Команда</h2>
+        <div class="portfolio-slider">
+            <div class="portfolio-slide">
+                <div class="command-column__img">
+                    <img src="/static/img/yudkin.jpg" alt="san4ezy">
+                </div>
+                <h3 class="command-column__title">Юдкин А.</h3>
+                <p class="command-column__text">Team lead, Python Developer</p>
+            </div><!-- slide(1) -->
+            <div class="portfolio-slide">
+                <div class="command-column__img">
+                    <img src="/static/img/person-2.jpg" alt="san4ezy">
+                </div>
+                <h3 class="command-column__title">Иванов С.А</h3>
+                <p class="command-column__text">Руководитель отдела</p>
+            </div><!-- slide(2) -->
+            <!--div class="portfolio-slide">
+                <div class="command-column__img">
+                    <img src="img/plus.png" alt="работа">
+                </div>
+                <h3 class="command-column__title">Вакансия</h3>
+                <p class="command-column__text">Project manager</p>
+            </div--><!-- slide(3) -->
+            <div class="portfolio-slide">
+                <div class="command-column__img">
+                    <a href="#job-sales-manager" class="button-modal">
+                        <img src="/static/img/plus.png" alt="работа">
+                    </a>
+                </div>
+                <h3 class="command-column__title">Вакансия</h3>
+                <p class="command-column__text">Sales manager</p>
+            </div><!-- slide(4) -->
+        </div>
+    </div>
+</section>
+<!-- end command -->
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-sportpit" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/sportpit.jpg" alt="wear">
-					</div>
-					<p class="portfolio-slide__text">Магазин спортивного питания</p>
-				</div>
 
-				<div class="portfolio-slide">
-					<a href="#portfolio-fashion" class="button-modal portfolio-link"></a>
-					<div class="portfolio-slide__img">
-						<img src="img/portfolio/tumbs/web-fashion.jpg" alt="fashion">
-					</div>
-					<p class="portfolio-slide__text">Магазин фирменной одежды</p>
-				</div>
+    
+    
 
-			</div>
-		</div>
-	</section>
-	<!-- end portfolio -->
-	<!-- start advantages -->
-	<section class="advantages" id="advantages" style="background: url(img/benefits.jpg);">
-		<div class="wrapper">
-			<h2 class="advantages-title">Выгоды</h2>
-			<div class="advantages-row">
-				
-				<div class="advantages-column">
-					<div class="advantages-column__img">
-						<img src="img/expirience_2.png">
-						<!--picture>
-						 	<source srcset="img/startup-white.svg" type="image/svg+xml">
-						 	<img src="img/startup-white.png" alt="san4ezy">
-						</picture-->
-					</div>
-					<p class="advantages-column__text">Опыт и профессионализм! Мы делаем то, что умеем, и делаем это хорошо. Весь наш опыт и наши знания к вашим услугам.</p>
-				</div>
+<!-- start contacts -->
+<section class="contacts" id="contacts">
+    <div class="contacts-row">
+        <div class="contacts-column">
+            <div class="contacts-column__descr">
+                <h2 class="section-title contacts-title">Контакты</h2>
+                <ul class="contacts-list">
+                    <!-- <li class="contacts-item">Phone number: <a href="tel:+380987654321">+380 98 796 3224</a></li> -->
+                    <li class="contacts-item">Email: <a href="mailTo:inbox@sunnyweb.pro">inbox@sunnyweb.pro</a></li>
+                    <!--li class="contacts-item">Skype: <a href="#login">sunnyweb</a></li-->
+                    <li class="contacts-item">Telegram: <a href="https://t.me/sunnyweb">@sunnyweb</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contacts-column contacts-column__img" style="background: url(/static/img/contact-bg.jpg);"></div>
+    </div>
+</section>
+<!-- end contacts -->
+<!-- start footer -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-row">
+            <div class="footer-column">
+                <ul class="footer-column__list">
+                    <li class="footer-column__item">
+                        <a href="https://vk.com/sunnyweb">
+                            <picture>
+                                <source srcset="/static/img/vk.svg" type="image/svg+xml">
+                                <img src="/static/img/vk.png" alt="san4ezy">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer-column__item">
+                        <a href="https://www.facebook.com/sunnywebsoftware/">
+                            <picture>
+                                <source srcset="/static/img/facebook.svg" type="image/svg+xml">
+                                <img src="/static/img/facebook.png" alt="san4ezy">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer-column__item">
+                        <a href="https://www.linkedin.com/company/sunnyweb-software/">
+                            <picture>
+                                <source srcset="/static/img/linkedin.svg" type="image/svg+xml">
+                                <img src="/static/img/linkedin.png" alt="san4ezy">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p class="footer-column__copy">SunnyWeb &copy; 2016-2018</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
 
-				<div class="advantages-column">
-					<div class="advantages-column__img">
-						<img src="img/money_saving.png">
-						<!--picture>
-						 	<source srcset="img/startup-white.svg" type="image/svg+xml">
-						 	<img src="img/startup-white.png" alt="san4ezy">
-						</picture-->
-					</div>
-					<p class="advantages-column__text">Экономия! Удаленная команда специалистов намного выгоднее, чем содержание собственного IT отдела.</p>
-				</div>
 
-				<div class="advantages-column">
-					<div class="advantages-column__img">
-						<img src="img/support_3.png">
-						<!--picture>
-						 	<source srcset="img/startup-white.svg" type="image/svg+xml">
-						 	<img src="img/startup-white.png" alt="san4ezy">
-						</picture-->
-					</div>
-					<p class="advantages-column__text">Поддержка! Даже после завершения разработки мы продолжаем поддерживать ваш проект.</p>
-				</div>
-				
-				<div class="advantages-column">
-					<div class="advantages-column__img">
-						<img src="img/testing_2.png">
-						<!--picture>
-						 	<source srcset="img/startup-white.svg" type="image/svg+xml">
-						 	<img src="img/startup-white.png" alt="san4ezy">
-						</picture-->
-					</div>
-					<p class="advantages-column__text">Тестирование! Проверим работоспособность продукта и исправим все ошибки.</p>
-				</div>
 
-			</div>
-		</div>
-	</section>
-	<!-- end advantages -->
-	<!-- start command -->
-	<section class="command" id="command">
-		<div class="wrapper">
-			<h2 class="section-title command-title">Команда</h2>
-			<div class="portfolio-slider">
-				<div class="portfolio-slide">
-					<div class="command-column__img">
-						<img src="img/person-1.jpg" alt="san4ezy">
-					</div>
-					<h3 class="command-column__title">Иванов С.А</h3>
-					<p class="command-column__text">Team lead, Python Developer</p>
-				</div><!-- slide(1) -->
-				<div class="portfolio-slide">
-					<div class="command-column__img">
-						<img src="img/person-2.jpg" alt="san4ezy">
-					</div>
-					<h3 class="command-column__title">Иванов С.А</h3>
-					<p class="command-column__text">Руководитель отдела</p>
-				</div><!-- slide(2) -->
-				<!--div class="portfolio-slide">
-					<div class="command-column__img">
-						<img src="img/plus.png" alt="работа">
-					</div>
-					<h3 class="command-column__title">Вакансия</h3>
-					<p class="command-column__text">Project manager</p>
-				</div--><!-- slide(3) -->
-				<div class="portfolio-slide">
-					<div class="command-column__img">
-						<a href="#job-sales-manager" class="button-modal">
-							<img src="img/plus.png" alt="работа">
-						</a>
-					</div>
-					<h3 class="command-column__title">Вакансия</h3>
-					<p class="command-column__text">Sales manager</p>
-				</div><!-- slide(4) -->
-			</div>
-		</div>
-	</section>
-	<!-- end command -->
-	<!-- start contacts -->
-	<section class="contacts" id="contacts">
-		<div class="contacts-row">
-			<div class="contacts-column">
-				<div class="contacts-column__descr">
-					<h2 class="section-title contacts-title">Контакты</h2>
-					<ul class="contacts-list">
-						<!-- <li class="contacts-item">Phone number: <a href="tel:+380987654321">+380 98 796 3224</a></li> -->
-						<li class="contacts-item">Email: <a href="mailTo:inbox@sunnyweb.pro">inbox@sunnyweb.pro</a></li>
-						<!--li class="contacts-item">Skype: <a href="#login">sunnyweb</a></li-->
-						<li class="contacts-item">Telegram: <a href="https://t.me/sunnyweb">@sunnyweb</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="contacts-column contacts-column__img" style="background: url(img/contact-bg.jpg);"></div>
-		</div>
-	</section>
-	<!-- end contacts -->
-	<!-- start footer -->
-	<footer class="footer">
-		<div class="wrapper">
-			<div class="footer-row">
-				<div class="footer-column">
-					<ul class="footer-column__list">
-						<li class="footer-column__item">
-							<a href="https://vk.com/sunnyweb">
-								<picture>
-								 	<source srcset="img/vk.svg" type="image/svg+xml">
-								 	<img src="img/vk.png" alt="san4ezy">
-								</picture>
-							</a>
-						</li>
-						<li class="footer-column__item">
-							<a href="https://www.facebook.com/sunnywebsoftware/">
-								<picture>
-								 	<source srcset="img/facebook.svg" type="image/svg+xml">
-								 	<img src="img/facebook.png" alt="san4ezy">
-								</picture>
-							</a>
-						</li>
-						<li class="footer-column__item">
-							<a href="https://www.linkedin.com/company/sunnyweb-software/">
-								<picture>
-								 	<source srcset="img/linkedin.svg" type="image/svg+xml">
-								 	<img src="img/linkedin.png" alt="san4ezy">
-								</picture>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-column">
-					<p class="footer-column__copy">SunnyWeb &copy; 2016-2017</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- end footer -->
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
-	<script src="js/common.js"></script>
+    <link rel="stylesheet" href=/static/css/main.min.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src=/static/libs/slick/slick.min.js></script>
+    <script src=/static/js/common.js></script>
 </body>
 </html>

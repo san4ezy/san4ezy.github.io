@@ -1,0 +1,54 @@
+{% load static %}
+
+<!-- start logo -->
+	<div style="position: fixed; top: 10px; left: 10px; z-index: 100">
+		<a href="http://sunnyweb.pro">
+			<img id="logo" src="{% static "img/logo_round.png" %}" alt="SunnyWeb" width="64">
+		</a>
+	</div>
+	<!-- end logo -->
+
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="menu-bar">
+				<span></span>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li class="header-item"><a href="#services">Услуги</a></li>
+					<li class="header-item"><a href="#portfolio">Портфолио</a></li>
+					<li class="header-item"><a href="#advantages">Выгоды</a></li>
+					<li class="header-item"><a href="#command">Команда</a></li>
+					<li class="header-item"><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start language -->
+	<div style="position: fixed; top: 100px; right: 10px; z-index: 100">
+		<a href="en/"><img src="{% static "img/lang/en.png" %}" alt="In English" width="30"></a>
+		<!--<a href="/"><img src="img/lang/ua.png" alt="Українською" width="30"></a>-->
+	</div>
+	<!-- end language -->
+	<!-- start banner -->
+	<section class="banner" style="background: url({% static "img/banner-bg.jpg" %});">
+		<div class="wrapper">
+			<div class="banner-descr">
+				<h1 class="banner-descr__title">SunnyWeb</h1>
+				<p class="banner-descr__text">Разработка WEB и мобильных приложений</p>
+				<a href="#order" class="button-modal banner-descr__link">Заказать</a>
+			</div>
+		</div>
+	</section>
+	<!-- end banner -->
+	<!-- start technologies -->
+	<section class="technologies" id="technologies">
+		<div class="wrapper">
+            {% for technology in technologies %}
+                <img class="tech-logo" src="{{ technology.image.url }}" alt="{{ technology.name }}">
+            {% endfor %}
+		</div>
+	</section>
+	<!-- end technologies -->
