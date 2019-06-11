@@ -8,7 +8,7 @@
                 <p class="modal-content__text">{{ project.description }}</p>
                 <p class="modal-content__text"><strong>Стек технологий:</strong>
                     {% for technology in project.technologies.all %}
-                        {{ technology.name }} &nbsp;
+                        <span class="badge badge-secondary">{{ technology.name }}</span>
                     {% endfor %}
                 </p>
             </div>
@@ -28,13 +28,14 @@
                 <div class="portfolio-slide">
                     <a href="#portfolio-{{ project.slug }}" class="button-modal portfolio-link"></a>
                     <div class="portfolio-slide__img">
-                        <img src="{{ project.image.url }}" alt="{{ project.slug }}">
+                        <img src="{% if project.thumbnail %}{{ project.thumbnail.url }}{% endif %}" alt="{{ project.slug }}">
                     </div>
                     <p class="portfolio-slide__text">{{ project.name }}</p>
                 </div>
             {% endfor %}
 
         </div>
+
     </div>
 </section>
 <!-- end portfolio -->

@@ -1,5 +1,16 @@
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO, BytesIO
+
+import os
+
+from PIL import Image
+from django.conf import settings
+from django.core.files.base import ContentFile
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.core.files.storage import default_storage as storage
 
 
 class Technology(models.Model):
@@ -16,6 +27,7 @@ class Project(models.Model):
     name = models.CharField(max_length=64)
     slug = models.SlugField(blank=True, unique=True)
     image = models.ImageField(upload_to='portfolio')
+    thumbnail = models.ImageField(upload_to='portfolio/thumbs', blank=True, null=True)
     description = models.CharField(max_length=255)
     technologies = models.ManyToManyField(Technology)
     is_active = models.BooleanField(default=True)
@@ -25,7 +37,40 @@ class Project(models.Model):
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
+        if not self.thumbnail:
+            if not self.make_thumbnail():
+                raise Exception('Could not create thumbnail - is the file type valid?')
         return super().save(*args, **kwargs)
+
+
+    def make_thumbnail(self):
+        image = Image.open(self.image)
+        image.thumbnail(settings.THUMB_SIZE, Image.ANTIALIAS)
+
+        thumb_name, thumb_extension = os.path.splitext(self.image.name)
+        thumb_extension = thumb_extension.lower()
+
+        thumb_filename = thumb_name + '_thumb' + thumb_extension
+
+        if thumb_extension in ['.jpg', '.jpeg']:
+            FTYPE = 'JPEG'
+        elif thumb_extension == '.gif':
+            FTYPE = 'GIF'
+        elif thumb_extension == '.png':
+            FTYPE = 'PNG'
+        else:
+            return False  # Unrecognized file type
+
+        # Save thumbnail to in-memory file as StringIO
+        temp_thumb = BytesIO()
+        image.save(temp_thumb, FTYPE)
+        temp_thumb.seek(0)
+
+        # set save=False, otherwise it will run in an infinite loop
+        self.thumbnail.save(thumb_filename, ContentFile(temp_thumb.read()), save=False)
+        temp_thumb.close()
+
+        return True
 
 
 class Chunk(models.Model):
