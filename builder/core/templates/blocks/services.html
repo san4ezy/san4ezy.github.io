@@ -1,7 +1,9 @@
+{% load i18n %}
+
 <!-- start services -->
 	<section class="services" id="services">
 		<div class="wrapper">
-			<h2 class="section-title services-title">Услуги</h2>
+			<h2 class="section-title services-title">{% trans "Услуги" %}</h2>
 			<div class="services-row">
 				{% for service in services %}
                     <div class="services-column">

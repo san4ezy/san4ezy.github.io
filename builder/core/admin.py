@@ -33,6 +33,9 @@ class PageAdmin(admin.ModelAdmin):
     def build(self, request, queryset):
         for obj in queryset:
             # response = render_to_string(obj.template, {})
-            response = requests.get(f"http://localhost:8000{reverse(obj.template)}")
-            with open(f'../{obj.template}.html', 'w') as static_file:
+            response = requests.get(
+                f"http://localhost:8000{reverse(obj.template)}",
+                headers={'Accept-Language': obj.language}
+            )
+            with open(f'../{obj.name}.html', 'w') as static_file:
                 static_file.write(response.content.decode())

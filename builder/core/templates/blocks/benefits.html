@@ -1,9 +1,10 @@
 {% load static %}
+{% load i18n %}
 
 <!-- start advantages -->
 <section class="advantages" id="advantages" style="background: url({% static "img/benefits.jpg" %});">
     <div class="wrapper">
-        <h2 class="advantages-title">Выгоды</h2>
+        <h2 class="advantages-title">{% trans "Выгоды" %}</h2>
         <div class="advantages-row">
 
             {% for benefit in benefits %}

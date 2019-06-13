@@ -1,9 +1,10 @@
 {% load static %}
+{% load i18n %}
 
 <!-- start command -->
 <section class="command" id="command">
     <div class="wrapper">
-        <h2 class="section-title command-title">Команда</h2>
+        <h2 class="section-title command-title">{% trans "Команда" %}</h2>
         <div class="portfolio-slider">
 
             {% for player in team_players %}
@@ -23,7 +24,7 @@
                             <img src="{% static "img/plus.png" %}" alt="SunnyWeb {{ vacancy.name }}">
                         </a>
                     </div>
-                    <h3 class="command-column__title">Вакансия</h3>
+                    <h3 class="command-column__title">{% trans "Вакансия" %}</h3>
                     <p class="command-column__text">{{ vacancy.name }}</p>
                 </div>
             {% endfor %}

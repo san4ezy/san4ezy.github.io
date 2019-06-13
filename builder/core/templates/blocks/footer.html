@@ -1,11 +1,12 @@
 {% load static %}
+{% load i18n %}
 
 <!-- start contacts -->
 <section class="contacts" id="contacts">
     <div class="contacts-row">
         <div class="contacts-column">
             <div class="contacts-column__descr">
-                <h2 class="section-title contacts-title">Контакты</h2>
+                <h2 class="section-title contacts-title">{% trans "Контакты" %}</h2>
                 <ul class="contacts-list">
                     {% for contact in contacts %}
                         <li class="contacts-item">{{ contact.name }}: {{ contact.special_value }}</li>

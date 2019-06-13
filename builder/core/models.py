@@ -102,6 +102,7 @@ class Chunk(models.Model):
 class Page(models.Model):
     name = models.CharField(max_length=64)
     template = models.CharField(max_length=255)
+    language = models.CharField(max_length=8, choices=settings.LANGUAGES, default=settings.LANGUAGE_CODE)
 
     def __str__(self):
         return f"{self.name}"
