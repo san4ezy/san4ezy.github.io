@@ -16,7 +16,8 @@ class TechnologyAdmin(admin.ModelAdmin):
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('name', 'slug', 'description', 'is_active',)
+    list_display = ('name', 'slug', 'description', 'is_active', 'ordering_value',)
+    list_editable = ('is_active', 'ordering_value',)
 
 
 @admin.register(Chunk)

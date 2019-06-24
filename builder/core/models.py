@@ -31,12 +31,17 @@ class Project(models.Model):
     description = models.CharField(max_length=255)
     technologies = models.ManyToManyField(Technology)
     is_active = models.BooleanField(default=True)
+    ordering_value = models.PositiveSmallIntegerField(default=0)
+
+    class Meta:
+        ordering = ('ordering_value', 'pk',)
 
     def __str__(self):
         return f"{self.name}"
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.name)
+        if not self.slug:
+            self.slug = slugify(self.name)
         if not self.thumbnail:
             if not self.make_thumbnail():
                 raise Exception('Could not create thumbnail - is the file type valid?')
